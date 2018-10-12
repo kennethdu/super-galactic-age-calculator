@@ -75,7 +75,15 @@ export class Person{
             let currentLife = this.life;
             this.life = currentLife * parseFloat(.62).toFixed(2);
         }
-        
+    }
+
+    marsLife() {
+        this.getLife();
+
+        if (this.planet === "Mars") {
+            let currentLife = this.life;
+            this.life = currentLife * 1.88;
+        }
     }
 
 }
