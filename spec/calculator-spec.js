@@ -90,11 +90,14 @@ describe('PlanetLife for Mercury', function () {
     });
 });
 
-// describe('PlanetLife for Venus', function () {
-//     it('should calculate the Person object life expectancy on Venus', function () {
+describe('PlanetLife for Venus', function () {
+    it('should calculate the Person object life expectancy on Venus', function () {
+        let Kenneth = new Person("Kenneth", 1997, "United States", "Moderate", "Venus");
+        Kenneth.venusLife();
+        expect(Kenneth.life).toEqual(35.339999999999996);
 
-//     });
-// });
+    });
+});
 
 // describe('PlanetLife for Mars', function () {
 //     it('should calculate the Person object life expectancy on Mars', function () {
