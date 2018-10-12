@@ -17,6 +17,7 @@ export class Person{
         let personAge = todayYear - this.year;
         this.age = personAge;
     }
+
     mercuryAge() {
         let mercuryAge = this.age * .24;
         this.age = mercuryAge;
@@ -46,12 +47,12 @@ export class Person{
             this.life = this.age - this.life;
         }
     }
-  
 
     earthLife() {
+        this.getLife();
 
-        if (this.country === "United States" && this.activity === "Moderate" && this.planet === "Earth"){
-            this.life + 5 + 5 + 0;
+        if (this.activity === "Moderate"){
+            this.life += 10;
         }
     }
 
