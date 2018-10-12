@@ -68,4 +68,14 @@ export class Person{
         }
     }
 
+    venusLife() {
+        this.getLife();
+
+        if (this.planet === "Venus") {
+            let currentLife = this.life;
+            this.life = currentLife * parseFloat(.62).toFixed(2);
+        }
+        
+    }
+
 }
