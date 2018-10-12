@@ -39,10 +39,13 @@ export class Person{
     }
 
     getLife() {
+        this.getEarthAge();
         this.life = this.life - this.age;
     }
 
     checkLife() {
+        this.getEarthAge();
+
         if (this.age >= this.life) {
             this.life = this.age - this.life;
         }
@@ -53,6 +56,15 @@ export class Person{
 
         if (this.activity === "Moderate"){
             this.life += 10;
+        }
+    }
+
+    mercuryLife() {   
+        this.getLife();
+     
+        if (this.planet === "Mercury"){
+            let currentLife = this.life;
+            this.life = currentLife * .24;
         }
     }
 
