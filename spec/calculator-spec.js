@@ -61,7 +61,6 @@ describe('PlanetAge for Jupiter', function () {
 describe('PlanetLife for Earth', function () {
     it('should calculate the Person object life expectancy on Earth', function () {
         let Kenneth = new Person("Kenneth", 1997, "United States", "Moderate", "Earth");
-        let earthAge = Kenneth.getEarthAge();
         let earthLife = Kenneth.getLife();
         expect(Kenneth.life).toEqual(57);
     });
@@ -70,7 +69,6 @@ describe('PlanetLife for Earth', function () {
 describe('PlanetLife for Earth', function () {
     it('should calculate how much longer a person lives beyond their life expanctacy if they have', function () {
         let Kenneth = new Person("Kenneth", 1800, "United States", "Moderate", "Earth");
-        let earthAge = Kenneth.getEarthAge();
         let lifeRollover = Kenneth.checkLife();
         expect(Kenneth.life).toEqual(140);
     });
@@ -79,10 +77,16 @@ describe('PlanetLife for Earth', function () {
 describe('PlanetLife for Earth', function(){
     it('should calculate the Person object life expectancy depending on certain object properties', function(){
         let Kenneth = new Person("Kenneth", 1997, "United States", "Moderate", "Earth");
-        let earthAge = Kenneth.getEarthAge();
         let earthLife = Kenneth.earthLife();
         expect(Kenneth.life).toEqual(67);
+    });
+});
 
+describe('PlanetLife for Mercury', function () {
+    it('should calculate the Person object life expectancy on Mercury', function () {
+        let Kenneth = new Person("Kenneth", 1997, "United States", "Moderate", "Mercury");
+        Kenneth.mercuryLife();
+        expect(Kenneth.life).toEqual(13.68);
     });
 });
 
