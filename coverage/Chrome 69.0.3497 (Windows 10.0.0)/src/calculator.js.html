@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src\calculator.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">src/</a> calculator.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>8/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">12.5% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>1/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/1</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span></td><td class="text"><pre class="prettyprint lang-js">!function(e){var n={};function t(c){<span class="missing-if-branch" title="if path not taken" >I</span>if(n[c])<span class="cstat-no" title="statement not covered" >return n[c].exports;v</span>ar g=n[c]={i:c,l:!1,exports:{}};return e[c].call(g.exports,g,g.exports,t),g.l=!0,g.exports}t.m=e,t.c=n,t.d=<span class="fstat-no" title="function not covered" >function(e,n,c){<span class="cstat-no" title="statement not covered" ></span>t.o(e,n)||Object.defineProperty(e,n,{configurable:!1,enumerable:!0,get:c})}</span>,t.r=<span class="fstat-no" title="function not covered" >function(e){<span class="cstat-no" title="statement not covered" ></span>Object.defineProperty(e,"__esModule",{value:!0})}</span>,t.n=<span class="fstat-no" title="function not covered" >function(e){<span class="cstat-no" title="statement not covered" ></span>var n=e&amp;&amp;e.__esModule?<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return e.default}</span>:<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return e}</span>;<span class="cstat-no" title="statement not covered" >r</span>eturn t.d(n,"a",n),n}</span>,t.o=<span class="fstat-no" title="function not covered" >function(e,n){<span class="cstat-no" title="statement not covered" ></span>return Object.prototype.hasOwnProperty.call(e,n)}</span>,t.p="C:\\Users\\KENNET~1\\AppData\\Local\\Temp\\_karma_webpack_\\",t(t.s=12)}({12:function(module,exports,__webpack_require__){"use strict";eval('\n\nObject.defineProperty(exports, "__esModule", {\n    value: true\n});\n\nvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i &lt; props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }\n\n/* eslint-disable no-unused-vars */\n\nvar Person = exports.Person = function () {\n    function Person(name, year, country, activity, planet) {\n        _classCallCheck(this, Person);\n\n        this.name = name;\n        this.year = year;\n        this.country = country;\n        this.activity = activity;\n        this.planet = planet;\n        this.life = 78;\n        this.age = 0;\n    }\n\n    _createClass(Person, [{\n        key: "getEarthAge",\n        value: function getEarthAge() {\n            var today = new Date();\n            var todayYear = today.getFullYear();\n            var personAge = todayYear - this.year;\n            this.age = personAge;\n        }\n    }, {\n        key: "mercuryAge",\n        value: function mercuryAge() {\n            var mercuryAge = this.age * .24;\n            this.age = mercuryAge;\n        }\n    }, {\n        key: "venusAge",\n        value: function venusAge() {\n            var venusAge = this.age * .62;\n            this.age = venusAge;\n        }\n    }, {\n        key: "marsAge",\n        value: function marsAge() {\n            var marsAge = this.age * 1.88;\n            this.age = marsAge;\n        }\n    }, {\n        key: "jupiterAge",\n        value: function jupiterAge() {\n            var marsAge = this.age * 11.86;\n            this.age = marsAge;\n        }\n    }, {\n        key: "getLife",\n        value: function getLife() {\n            this.life = this.life - this.age;\n        }\n    }, {\n        key: "checkLife",\n        value: function checkLife() {\n            if (this.age &gt;= this.life) {\n                this.life = this.age - this.life;\n            }\n        }\n    }, {\n        key: "earthLife",\n        value: function earthLife() {\n\n            if (this.country === "United States" &amp;&amp; this.activity === "Moderate" &amp;&amp; this.planet === "Earth") {\n                this.life + 5 + 5 + 0;\n            }\n        }\n    }]);\n\n    return Person;\n}();//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvY2FsY3VsYXRvci5qcz8wZDc3Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFFTzs7SUFDSDtvQkFBWSxNQUFNLE1BQU0sU0FBUyxVQUFVO0FBQzNDOzthQUFLLE9BQ0w7YUFBSyxPQUNMO2FBQUssVUFDTDthQUFLLFdBQ0w7YUFBSyxTQUNMO2FBQUssT0FDTDthQUFLLE1BQ0o7QUFFRDs7OztzQ0FDSTtnQkFBSSxRQUFRLElBQ1o7Z0JBQUksWUFBWSxNQUNoQjtnQkFBSSxZQUFZLFlBQVksS0FDNUI7aUJBQUssTUFDUjtBQUNEOzs7cUNBQ0k7Z0JBQUksYUFBYSxLQUFLLE1BQ3RCO2lCQUFLLE1BQ1I7QUFFRDs7O21DQUNJO2dCQUFJLFdBQVcsS0FBSyxNQUNwQjtpQkFBSyxNQUNSO0FBRUQ7OztrQ0FDSTtnQkFBSSxVQUFVLEtBQUssTUFDbkI7aUJBQUssTUFDUjtBQUVEOzs7cUNBQ0k7Z0JBQUksVUFBVSxLQUFLLE1BQ25CO2lCQUFLLE1BQ1I7QUFFRDs7O2tDQUNJO2lCQUFLLE9BQU8sS0FBSyxPQUFPLEtBQzNCO0FBRUQ7OztvQ0FDSTtnQkFBSSxLQUFLLE9BQU8sS0FBSyxNQUNqQjtxQkFBSyxPQUFPLEtBQUssTUFBTSxLQUMxQjtBQUNKO0FBR0Q7OztvQ0FFSTs7Z0JBQUksS0FBSyxZQUFZLG1CQUFtQixLQUFLLGFBQWEsY0FBYyxLQUFLLFdBQVcsU0FDcEY7cUJBQUssT0FBTyxJQUFJLElBQ25CO0FBQ0o7QUFyRGMiLCJmaWxlIjoiMTIuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBlc2xpbnQtZGlzYWJsZSBuby11bnVzZWQtdmFycyAqL1xyXG5cclxuZXhwb3J0IGNsYXNzIFBlcnNvbntcclxuICAgIGNvbnN0cnVjdG9yKG5hbWUsIHllYXIsIGNvdW50cnksIGFjdGl2aXR5LCBwbGFuZXQpe1xyXG4gICAgdGhpcy5uYW1lID0gbmFtZTtcclxuICAgIHRoaXMueWVhciA9IHllYXI7XHJcbiAgICB0aGlzLmNvdW50cnkgPSBjb3VudHJ5O1xyXG4gICAgdGhpcy5hY3Rpdml0eSA9IGFjdGl2aXR5O1xyXG4gICAgdGhpcy5wbGFuZXQgPSBwbGFuZXQ7XHJcbiAgICB0aGlzLmxpZmUgPSA3ODtcclxuICAgIHRoaXMuYWdlID0gMDtcclxuICAgIH1cclxuXHJcbiAgICBnZXRFYXJ0aEFnZSgpIHtcclxuICAgICAgICBsZXQgdG9kYXkgPSBuZXcgRGF0ZSgpO1xyXG4gICAgICAgIGxldCB0b2RheVllYXIgPSB0b2RheS5nZXRGdWxsWWVhcigpO1xyXG4gICAgICAgIGxldCBwZXJzb25BZ2UgPSB0b2RheVllYXIgLSB0aGlzLnllYXI7XHJcbiAgICAgICAgdGhpcy5hZ2UgPSBwZXJzb25BZ2U7XHJcbiAgICB9XHJcbiAgICBtZXJjdXJ5QWdlKCkge1xyXG4gICAgICAgIGxldCBtZXJjdXJ5QWdlID0gdGhpcy5hZ2UgKiAuMjQ7XHJcbiAgICAgICAgdGhpcy5hZ2UgPSBtZXJjdXJ5QWdlO1xyXG4gICAgfVxyXG5cclxuICAgIHZlbnVzQWdlKCkge1xyXG4gICAgICAgIGxldCB2ZW51c0FnZSA9IHRoaXMuYWdlICogLjYyO1xyXG4gICAgICAgIHRoaXMuYWdlID0gdmVudXNBZ2U7XHJcbiAgICB9XHJcblxyXG4gICAgbWFyc0FnZSgpIHtcclxuICAgICAgICBsZXQgbWFyc0FnZSA9IHRoaXMuYWdlICogMS44ODtcclxuICAgICAgICB0aGlzLmFnZSA9IG1hcnNBZ2U7XHJcbiAgICB9XHJcblxyXG4gICAganVwaXRlckFnZSgpIHtcclxuICAgICAgICBsZXQgbWFyc0FnZSA9IHRoaXMuYWdlICogMTEuODY7XHJcbiAgICAgICAgdGhpcy5hZ2UgPSBtYXJzQWdlO1xyXG4gICAgfVxyXG5cclxuICAgIGdldExpZmUoKSB7XHJcbiAgICAgICAgdGhpcy5saWZlID0gdGhpcy5saWZlIC0gdGhpcy5hZ2U7XHJcbiAgICB9XHJcblxyXG4gICAgY2hlY2tMaWZlKCkge1xyXG4gICAgICAgIGlmICh0aGlzLmFnZSA+PSB0aGlzLmxpZmUpIHtcclxuICAgICAgICAgICAgdGhpcy5saWZlID0gdGhpcy5hZ2UgLSB0aGlzLmxpZmU7XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG4gIFxyXG5cclxuICAgIGVhcnRoTGlmZSgpIHtcclxuXHJcbiAgICAgICAgaWYgKHRoaXMuY291bnRyeSA9PT0gXCJVbml0ZWQgU3RhdGVzXCIgJiYgdGhpcy5hY3Rpdml0eSA9PT0gXCJNb2RlcmF0ZVwiICYmIHRoaXMucGxhbmV0ID09PSBcIkVhcnRoXCIpe1xyXG4gICAgICAgICAgICB0aGlzLmxpZmUgKyA1ICsgNSArIDA7XHJcbiAgICAgICAgfVxyXG4gICAgfVxyXG5cclxufVxyXG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///12\n')}});</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Oct 12 2018 14:41:59 GMT-0700 (Pacific Daylight Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
