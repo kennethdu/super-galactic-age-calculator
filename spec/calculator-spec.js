@@ -106,8 +106,10 @@ describe('PlanetLife for Mars', function () {
     });
 });
 
-// describe('PlanetLife for Jupiter', function () {
-//     it('should calculate the Person object life expectancy on Jupiter', function () {
-
-//     });
-// });
+describe('PlanetLife for Jupiter', function () {
+    it('should calculate the Person object life expectancy on Jupiter', function () {
+        let Kenneth = new Person("Kenneth", 1997, "United States", "Moderate", "Jupiter");
+        Kenneth.jupiterLife();
+        expect(Kenneth.life).toEqual(676.02);
+    });
+});
