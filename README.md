@@ -43,10 +43,10 @@ Take a person’s age in years and create a class that does the following:
 | **The program will calculate the users age in Mars years** | Input:  Kenneth {'1997-02-09', 'United States', 'Moderate'} | Output: 39.48|
 | **The program will calculate the users age in Jupiter years** | Input: Kenneth {'1997-02-09', 'United States', 'Moderate'}| Output: 249.06|
 | **The program will calculate the user's life expectancy in Earth years** | Input: Kenneth {'1997-02-09', 'United States', 'Moderate'}| Output: 78 - 21 + (5+5) = 67 |
-| **The program will calculate the user's life expectancy in Mercury years** | Input: Kenneth {'1997-02-09', 'United States', 'Moderate'}| Output: 78 - 21 + (5+5) = 67 * .24 = 16.08 |
-| **The program will calculate the user's life expectancy in Venus years** | Input: Kenneth {'1997-02-09', 'United States', 'Moderate'}| Output: 78 - 21 + (5+5) = 67 * .68 = 45.56 |
-| **The program will calculate the user's life expectancy in Mars years** | Input: Kenneth {'1997-02-09', 'United States', 'Moderate'}| Output: 78 - 21 + (5+5) = 67 * 1.88 = 125.96 |
-| **The program will calculate the user's life expectancy in Jupiter years** | Input: Kenneth {'1997-02-09', 'United States', 'Moderate'}| Output: 78 - 21 + (5+5) = 67 * 11.86 = 794.62 |
+| **The program will calculate the user's life expectancy in Mercury years** | Input: Kenneth {'1997-02-09', 'United States', 'Moderate'}| Output: 13.68 |
+| **The program will calculate the user's life expectancy in Venus years** | Input: Kenneth {'1997-02-09', 'United States', 'Moderate'}| Output: 35.339999999999996 |
+| **The program will calculate the user's life expectancy in Mars years** | Input: Kenneth {'1997-02-09', 'United States', 'Moderate'}| Output: 107.16 |
+| **The program will calculate the user's life expectancy in Jupiter years** | Input: Kenneth {'1997-02-09', 'United States', 'Moderate'}| Output: 676.02 |
 
 ## Known Bugs
 
