@@ -86,4 +86,12 @@ export class Person{
         }
     }
 
+    jupiterLife() {
+        this.getLife();
+
+        if (this.planet === "Jupiter") {
+            let currentLife = this.life;
+            this.life = currentLife * 11.86;
+        }
+    }
 }
