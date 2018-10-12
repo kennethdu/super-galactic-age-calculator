@@ -2,9 +2,51 @@
 <html>
   <head>
     <script type="text/javascript" src="bundle.js"></script>
-    <title>SuperGalacticCalc</title>
+    <title>SuperGalacticCalculator</title>
   </head>
   <body>
-    <p>SuperGalacticCalc</p>
+    <form id="input">
+    <h1>Super Galactic Calculator</h1>
+    <div class="form-group">
+      <input type="text" class="form-control" id="name">Enter Your Name
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="year">Enter the Year you were born 
+    </div>
+    <p>What country are you from?</p>
+    <div class="radio">
+      <label>
+        <input type="radio" name="country" value="United States" checked>
+        United States
+      </label>
+    </div>
+    <p>What is your activity level?</p>
+    <div class="radio">
+      <label>
+        <input type="radio" name="activity" value="Moderate">
+        Low
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="activity" value="Moderate" checked>
+        Moderate
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="activity" value="Moderate">
+        High
+      </label>
+    </div>
+    <p>What planet would you like to compare your Earth age to?</p>
+    <select class="form-control" id="planet">
+      <option>Mercury</option>
+      <option>Venus</option>
+      <option>Mars</option>
+      <option>Jupiter</option>
+    </select>
+  <button type="submit" class="btn btn-primary">Calculate</button>
+  </form>
   </body>
 </html>
