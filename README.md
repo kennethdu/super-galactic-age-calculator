@@ -1,8 +1,10 @@
 # _Super Galactic Age Calculator_
 
-#### _Test Driven Development_
+#### _Epicodus Friday Independent Project: Test Driven Development_
 
 #### By _**Kenneth Du**_
+
+#### Date _**10_12_2018**_
 
 ## Description
 
@@ -37,16 +39,17 @@ Take a person’s age in years and create a class that does the following:
 ### Specs: Super Galactic Age Calculator
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **The program will identify user's entered birthday, country, and level of activity** | Input: "Kenneth: 1997-02-09, 'United States', 'Moderate'" | Output: Kenneth {'1997-02-09', 'United States', 'Moderate'} |
-| **The program will calculate the users age in Mercury years** | Input: Kenneth {'1997-02-09', 'United States', 'Moderate'} | Output: 5.04|
-| **The program will calculate the users age in Venus years** | Input:  Kenneth {'1997-02-09', 'United States', 'Moderate'} | Output: 13.02 |
-| **The program will calculate the users age in Mars years** | Input:  Kenneth {'1997-02-09', 'United States', 'Moderate'} | Output: 39.48|
-| **The program will calculate the users age in Jupiter years** | Input: Kenneth {'1997-02-09', 'United States', 'Moderate'}| Output: 249.06|
-| **The program will calculate the user's life expectancy in Earth years** | Input: Kenneth {'1997-02-09', 'United States', 'Moderate'}| Output: 78 - 21 + (5+5) = 67 |
-| **The program will calculate the user's life expectancy in Mercury years** | Input: Kenneth {'1997-02-09', 'United States', 'Moderate'}| Output: 13.68 |
-| **The program will calculate the user's life expectancy in Venus years** | Input: Kenneth {'1997-02-09', 'United States', 'Moderate'}| Output: 35.339999999999996 |
-| **The program will calculate the user's life expectancy in Mars years** | Input: Kenneth {'1997-02-09', 'United States', 'Moderate'}| Output: 107.16 |
-| **The program will calculate the user's life expectancy in Jupiter years** | Input: Kenneth {'1997-02-09', 'United States', 'Moderate'}| Output: 676.02 |
+| **The program will identify user's entered birthday, country, and level of activity** | Input: "'Kenneth', 1997, 'United States', 'Moderate', 'Mercury' " | Output: Kenneth { 'Kenneth', 1997, 'United States', 'Moderate', 'Earth' } |
+| **The program will calculate the users age in Mercury years** | Input: Kenneth { 'Kenneth', 1997, 'United States', 'Moderate', 'Mercury' } } | Output: 5.04|
+| **The program will calculate the users age in Venus years** | Input:  Kenneth { 'Kenneth', 1997, 'United States', 'Moderate', 'Venus' } } | Output: 13.02 |
+| **The program will calculate the users age in Mars years** | Input:  Kenneth { 'Kenneth', 1997, 'United States', 'Moderate', 'Mars' } } | Output: 39.48|
+| **The program will calculate the users age in Jupiter years** | Input: Kenneth { 'Kenneth', 1997, 'United States', 'Moderate', 'Jupiter' } }| Output: 249.06|
+| **The program will calculate the user's life expectancy in Earth years** | Input: Kenneth { 'Kenneth', 1997, 'United States', 'Moderate', 'Earth' } }| Output: 57 |
+| **The program will calculate identify if the user has lived beyond life expectancy and return how long past the normal life expectancy** | Input: Kenneth { 'Kenneth', 1800, 'United States', 'Moderate', 'Earth' } }| Output: 140 |
+| **The program will calculate the user's life expectancy in Mercury years** | Input: Kenneth { 'Kenneth', 1997, 'United States', 'Moderate', 'Mercury' } }| Output: 13.68 |
+| **The program will calculate the user's life expectancy in Venus years** | Input: Kenneth { 'Kenneth', 1997, 'United States', 'Moderate', 'Venus' } }| Output: 35.339999999999996 |
+| **The program will calculate the user's life expectancy in Mars years** | Input: Kenneth { 'Kenneth', 1997, 'United States', 'Moderate', 'Mars' } }| Output: 107.16 |
+| **The program will calculate the user's life expectancy in Jupiter years** | Input: Kenneth { 'Kenneth', 1997, 'United States', 'Moderate', 'Jupiter' } }| Output: 676.02 |
 
 ## Known Bugs
 
@@ -65,7 +68,7 @@ _HTML_
 _TDD_
 _Javascript_
 _ES6_
-
+_Node_
 ### License
 
 This software is licensed under the MIT license.
